@@ -1,0 +1,15 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.a{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(56,56,61) ;
+}
