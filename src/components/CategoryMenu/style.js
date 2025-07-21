@@ -1,4 +1,4 @@
-import {Row } from "antd";
+import {Image, Row } from "antd";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -50,7 +50,7 @@ export const CategoryItem = styled(Row)`
   }
 `;
 
-export const IconImage = styled.img`
+export const IconImage = styled(Image)`
   width: 40px;
   height: 40px;
 `;

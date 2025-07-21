@@ -2,12 +2,12 @@
 import { useState } from "react";
 import { Image, Typography } from "antd";
 import {
-  CarOutlined,
-  ClockCircleOutlined,
+  ClockCircleFilled,
   DownOutlined,
-  GiftOutlined,
+  GiftFilled,
   MenuOutlined,
   SyncOutlined,
+  TruckFilled,
 } from "@ant-design/icons";
 
 // Internal component imports
@@ -214,9 +214,9 @@ const categories = [
 ];
 
 const features = [
-  { icon: <ClockCircleOutlined />, label: "Hỗ trợ 24/7" },
-  { icon: <GiftOutlined />, label: "Miễn Phí Vận Chuyển" },
-  { icon: <CarOutlined />, label: "Giao Hàng Nhanh 2h" },
+  { icon: <ClockCircleFilled />, label: "Hỗ trợ 24/7" },
+  { icon:<GiftFilled />, label: "Miễn Phí Vận Chuyển" },
+  { icon: <TruckFilled />, label: "Giao Hàng Nhanh 2h" },
   { icon: <SyncOutlined />, label: "30 Ngày Đổi Trả" },
 ];
 
@@ -248,7 +248,7 @@ const CategoryMenu = () => {
                   onMouseEnter={() => setHoveredIndex(index)}
                   className={hoveredIndex === index ? "active" : ""}
                 >
-                  <IconImage src={cat.icon} alt={cat.label} />
+                  <IconImage src={cat.icon} alt={cat.label} preview={false}/>
                   <span style={{ width: "150px" }}>{cat.label}</span>
                   <Image src={imgIcon} preview={false}></Image>
                 </CategoryItem>
@@ -274,7 +274,7 @@ const CategoryMenu = () => {
         {features.map((f, i) => (
           <InfoItem key={i}>
             {f.icon}
-            <span>{f.label}</span>
+            <span style={{paddingTop:'3px'}}>{f.label}</span>
           </InfoItem>
         ))}
       </InfoList>
