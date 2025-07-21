@@ -27,6 +27,6 @@ export const NextArrow = styled(ArrowButton)`
 
 export const CustomProductCard = styled(ProductCard)`
   width: 230px;
-  height: 495px;
+  height: 445px;
   margin: 0;
 `;

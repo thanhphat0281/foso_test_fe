@@ -20,7 +20,7 @@ export const CardWrapper = styled.div`
 
 export const ProductImage = styled.img`
   width: 225px;
-  height: 225px;
+  height: 245px;
   object-fit: contain;
   margin: 0 auto 8px;
   display: block;
