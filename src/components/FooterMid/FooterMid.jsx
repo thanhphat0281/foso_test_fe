@@ -1,7 +1,11 @@
-// StoreSystemBanner.jsx
-import { Typography } from "antd";
-import { BannerWrapper, BannerText, BannerContent, BannerButton, BannerImage } from "./style";
-import imgMap from "../../assets/image/Map.png"
+import {
+  BannerWrapper,
+  BannerText,
+  BannerContent,
+  BannerButton,
+  BannerImage,
+} from "./style";
+import imgMap from "../../assets/image/Map.png";
 
 const FooterMid = () => {
   return (

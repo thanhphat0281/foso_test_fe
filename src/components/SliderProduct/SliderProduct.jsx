@@ -1,8 +1,8 @@
-import { Button, Image } from "antd";
+
 import Slider from "react-slick";
 import ProductCard from "../ProductCart/ProductCart";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { CustomProductCard, NextArrow, PrevArrow, ProductItem } from "./style";
+import {  NextArrow, PrevArrow,  } from "./style";
 
 const Prev = (props) => {
   const { onClick } = props;
@@ -26,15 +26,15 @@ const SliderProduct = ({ arrSlider }) => {
     autoplay: false,
     autoplaySpeed: 3000,
     prevArrow: <Prev />,
-    nextArrow: <Next />,
+    nextArrow: <Next />
   };
 
   return (
     <Slider {...settings}>
       {arrSlider.map((items) => {
         return (
-          <div>
-            <ProductCard key={items} product={items}></ProductCard>
+          <div key={items}>
+            <ProductCard  product={items}></ProductCard>
           </div>
         );
       })}

@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import {Row } from "antd";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -57,8 +57,8 @@ export const IconImage = styled.img`
 
 export const CategoryButton = styled.div`
   background-color: #0d57c6;
-  color: white;
-  padding: 10px 20px;
+  color: #FFFFFF;
+  padding: 16px 20px;
   border-radius: 6px;
   cursor: pointer;
   display: flex;
@@ -116,3 +116,8 @@ export const InfoItem = styled.div`
     font-size: 18px;
   }
 `;
+export const TitleMenu = styled.span`
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+`

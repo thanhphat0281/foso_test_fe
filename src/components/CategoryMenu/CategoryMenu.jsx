@@ -1,6 +1,6 @@
 // ✅ External imports
 import { useState } from "react";
-import { Col, Image, Typography } from "antd";
+import { Image, Typography } from "antd";
 import {
   CarOutlined,
   ClockCircleOutlined,
@@ -37,6 +37,7 @@ import {
   CategoryList,
   InfoList,
   InfoItem,
+  TitleMenu,
 } from "./style";
 
 const { Text } = Typography;
@@ -224,26 +225,18 @@ const CategoryMenu = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <Wrapper
-    // onMouseEnter={() => setVisible(true)}
-    // onMouseLeave={() => {
-    //   setVisible(false);
-    //   setHoveredIndex(null);
-    // }}
-    >
+    <Wrapper>
       <CategoryButtonWrapper
-       onMouseEnter={() => setVisible(true)}
-          onMouseLeave={() => {
-            setVisible(false);
-            setHoveredIndex(null);
-          }}
+        onMouseEnter={() => setVisible(true)}
+        onMouseLeave={() => {
+          setVisible(false);
+          setHoveredIndex(null);
+        }}
       >
-        <CategoryButton
-         
-        >
+        <CategoryButton>
           <MenuOutlined />
-          <span>Danh Mục Sản Phẩm</span>
-          <DownOutlined />
+          <TitleMenu >Danh Mục Sản Phẩm</TitleMenu>
+          <DownOutlined style={{marginLeft:'13px'}} />
         </CategoryButton>
 
         {visible && (

@@ -1,6 +1,5 @@
-import React from "react";
-import styled from "styled-components";
-import { Typography, Image } from "antd";
+
+import { Typography } from "antd";
 
 import saleIcon from "../../assets/image/Sale.png";
 import phoneIcon from "../../assets/image/Phone Rounded.png";

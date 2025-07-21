@@ -1,7 +1,5 @@
 // NavEndStyle.js
 import styled from "styled-components";
-import { Typography } from "antd";
-
 export const NavWrapper = styled.div`
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 // ProductHeader.jsx
-import { Typography, Button, Select } from "antd";
+import { Typography, Select } from "antd";
 import { HeaderWrapper, ButtonGroup, CustomButton, ActiveButton } from "./style";
 
 const { Title } = Typography;
@@ -8,7 +8,7 @@ const { Option } = Select;
 const ProductHeader = () => {
   return (
     <HeaderWrapper>
-      <Title level={5}>Danh sách sản phẩm</Title>
+      <Title style={{color:'#1C252E', fontSize:'20px', margin:'10px'}} level={5}>Danh sách sản phẩm</Title>
 
       <ButtonGroup>
         <label>Sắp xếp theo:</label>

@@ -1,16 +1,14 @@
 // ProductCard.jsx
-import { Button, Typography } from "antd";
+import {  Typography } from "antd";
 import {
   CardWrapper,
   ProductImage,
   DiscountTag,
   PriceText,
-  OldPrice,
   BuyButton,
   ProductOldPrice,
 } from "./style";
 import iconLeft from "../../assets/image/Left.png";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import { ProductDiscount } from "../CategoryContent/style";
 
 const { Paragraph, Text } = Typography;

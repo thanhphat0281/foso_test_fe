@@ -1,4 +1,4 @@
-// style.js
+import { Image, Select } from "antd";
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
@@ -64,17 +64,20 @@ export const FooterContainer = styled.div`
 
 export const CompanyName = styled.p`
   font-weight: 600;
+  color: #013065;
 `;
 
 export const InfoText = styled.p`
-  color: #4b5563; 
-  font-size: 12px;
+  color: #637381; 
+  font-size: 14px;
   margin-top: ${(props) => (props.mt ? props.mt : "0")};
 `;
 
 export const Title = styled.p`
   font-weight: 600;
-  margin-bottom: 8px;
+  color: #013065;
+  margin-top: 10px;
+  font-size: 24px;
 `;
 
 export const List = styled.ul`
@@ -87,10 +90,41 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   a {
     text-decoration: none;
-    color: inherit;
+    color: #637381;
 
     &:hover {
-      color: #1f2937; 
+      color: #1C252E; 
     }
   }
+`;
+
+export const StyledSelect = styled(Select)`
+  width: 100px;
+  border-radius: 8px;
+  margin-top:20px;
+  .ant-select-selector {
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 4px 8px !important;
+    display: flex;
+    align-items: center;
+     background: transparent !important;
+    box-shadow: none !important;
+  };
+  right: 0;
+`;
+
+export const OptionContent = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const FlagIcon = styled(Image)`
+  width: 36px !important;
+  margin-right: 8px;
+`;
+
+export const SelectWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `;

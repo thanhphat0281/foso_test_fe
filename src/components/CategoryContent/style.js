@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Image, Typography } from "antd";
-const { Title, Text } = Typography;
+const { Text } = Typography;
 export const SubIcon = styled.img`
   width: 70px;
   height: 70px;

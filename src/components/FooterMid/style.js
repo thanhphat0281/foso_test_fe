@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Typography, Button } from "antd";
 
 export const BannerWrapper = styled.div`
-  background-color: #eff6ff; /* Tailwind blue-50 */
-  margin-top: 24px;
+  background-color: #eff6ff;
+  // margin-top: 24px;
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;

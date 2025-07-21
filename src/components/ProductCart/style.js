@@ -1,16 +1,21 @@
 // ProductCardStyle.js
 import styled from "styled-components";
 import { Typography } from "antd";
-const {Text } = Typography;
+const { Text } = Typography;
 
 export const CardWrapper = styled.div`
   background: white;
   border-radius: 12px;
-  padding: 14px;
-  margin:10px;
+  padding: 13px;
+  margin: 8px;
   // width: 252px;
   // height: 495px;
   flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px #0375F329;
+  }
 `;
 
 export const ProductImage = styled.img`
@@ -39,7 +44,7 @@ export const DiscountTag = styled.div`
   }
 
   span {
-    color: #7A0916;
+    color: #7a0916;
   }
 `;
 
@@ -55,7 +60,7 @@ export const OldPrice = styled.p`
   text-decoration: line-through;
 
   .discount {
-    color: #B71D18;
+    color: #b71d18;
     margin-left: 4px;
   }
 `;
@@ -63,8 +68,8 @@ export const OldPrice = styled.p`
 export const BuyButton = styled.button`
   margin-top: 8px;
   width: 100%;
-  background-color: #E6F1FF;
-  color: #025FCA;
+  background-color: #e6f1ff;
+  color: #025fca;
   font-weight: 600;
   padding: 10px 0;
   border-radius: 8px;
@@ -76,4 +81,5 @@ export const ProductOldPrice = styled(Text)`
   margin: 8px;
   color: #919eab;
   font-size: 14px;
+    margin: 0px !important;
 `;

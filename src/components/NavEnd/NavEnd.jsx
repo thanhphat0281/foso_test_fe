@@ -1,6 +1,5 @@
 // NavEnd.jsx
 import { BreadcrumbLink, BreadcrumbText, NavWrapper } from "./style";
-import { Typography } from "antd";
 
 const NavEnd = () => {
   return (

@@ -6,7 +6,7 @@ export const FeaturesWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-
+  padding-bottom: 24px;
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
   }

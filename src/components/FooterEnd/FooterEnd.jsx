@@ -1,20 +1,25 @@
 // Footer.jsx
-import { List, Typography } from "antd";
+import { List, Select } from "antd";
 import {
   FooterWrapper,
   FooterColumn,
-  FooterList,
   FooterImage,
   FooterColumnLarge,
   CompanyName,
   InfoText,
   ListItem,
   Title,
+  StyledSelect,
+  OptionContent,
+  FlagIcon,
+  SelectWrapper,
 } from "./style";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import iconCHplay from "../../assets/image/play-store-fill.png";
 import iconAppleStore from "../../assets/image/apple-brand.png";
 import logo_1 from "../../assets/image/bo cong thuong.png";
+import iconCountry_1 from "../../assets/image/ico-country-c-vietnam.png";
+const { Option } = Select;
 
 const FooterEnd = () => {
   return (
@@ -37,16 +42,16 @@ const FooterEnd = () => {
         <Title>Sitemap</Title>
         <List>
           <ListItem>
-            <a href="#">About</a>
+            <a >About</a>
           </ListItem>
           <ListItem>
-            <a href="#">Article</a>
+            <a>Article</a>
           </ListItem>
           <ListItem>
-            <a href="#">Cart</a>
+            <a >Cart</a>
           </ListItem>
           <ListItem>
-            <a href="#">Contact</a>
+            <a >Contact</a>
           </ListItem>
         </List>
       </FooterColumn>
@@ -55,16 +60,16 @@ const FooterEnd = () => {
         <Title strong>Legal</Title>
         <List>
           <ListItem>
-            <a href="#">Privacy Policy</a>
+            <a >Privacy Policy</a>
           </ListItem>
           <ListItem>
-            <a href="#">Cookie Policy</a>
+            <a >Cookie Policy</a>
           </ListItem>
           <ListItem>
-            <a href="#">Delivery Policy</a>
+            <a >Delivery Policy</a>
           </ListItem>
           <ListItem>
-            <a href="#">FAQs</a>
+            <a >FAQs</a>
           </ListItem>
         </List>
       </FooterColumn>
@@ -119,6 +124,23 @@ const FooterEnd = () => {
           }}
           iconButton={iconAppleStore}
         />
+
+        <SelectWrapper>
+          <StyledSelect defaultValue="vi" size="middle">
+            <Option value="vi">
+              <OptionContent>
+                <FlagIcon src={iconCountry_1} preview={false} />
+                <span>VI</span>
+              </OptionContent>
+            </Option>
+            <Option value="en">
+              <OptionContent>
+                <FlagIcon src={iconCountry_1} preview={false} />
+                <span>EN</span>
+              </OptionContent>
+            </Option>
+          </StyledSelect>
+        </SelectWrapper>
       </FooterColumn>
     </FooterWrapper>
   );

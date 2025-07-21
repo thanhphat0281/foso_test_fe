@@ -14,12 +14,10 @@ import {
   WrapperTextAll,
 } from "./style";
 
-import { ArrowRightOutlined } from "@ant-design/icons";
-import arowRight from "../../assets/image/Vector (Stroke).svg"
-const {  Text } = Typography;
+import arowRight from "../../assets/image/Vector (Stroke).svg";
 
 {
-  Product.map((item, index) => {
+  Product.map((item) => {
     return <div key={item.id}>{item.name}</div>;
   });
 }
@@ -28,8 +26,8 @@ const CategoryContent = ({ data }) => {
 
   return (
     // <CartContainer>
-    <div style={{backgroundColor:' #F4F6F8;'}}>
-      <div style={{margin:'20px'}}>
+    <div style={{ backgroundColor: " #F4F6F8;" }}>
+      <div style={{ margin: "20px" }}>
         <Row gutter={[16, 16]}>
           {data.sub.map((item, index) => (
             <Col span={8} key={index}>
@@ -41,14 +39,13 @@ const CategoryContent = ({ data }) => {
           ))}
         </Row>
       </div>
-      <div style={{margin:'20px'}}>
+      <div style={{ margin: "20px" }}>
         <Row>
           <WrapperText>
             <h3>Sản Phẩm Bán Chạy</h3>
-
             <WrapperTextAll>
-                <p style={{paddingRight:'10px'}}>Xem tất cả</p>
-                <ImageIcon src={arowRight} preview={false}></ImageIcon>
+              <p style={{ paddingRight: "10px" }}>Xem tất cả</p>
+              <ImageIcon src={arowRight} preview={false}></ImageIcon>
             </WrapperTextAll>
           </WrapperText>
         </Row>
@@ -62,25 +59,15 @@ const CategoryContent = ({ data }) => {
                   width={184}
                   height={184}
                   preview={false}
-                  style={{textAlign:'center'}}
+                  style={{ textAlign: "center" }}
                 />
                 <ProductInfo>{product.name}</ProductInfo>
-                {/* <Text style={{margin:'8px', color:'red', fontWeight: 600}} >
-                  {product.price.toLocaleString()} đ
-                </Text> */}
                 <ProductPrice>{product.price.toLocaleString()} đ</ProductPrice>
                 <PriceWrapper>
-                  {/* <Text style={{margin:'8px'}} delete>{product.oldPrice.toLocaleString()} đ</Text> */}
                   <ProductOldPrice delete>
                     {product.oldPrice.toLocaleString()} đ
                   </ProductOldPrice>
-
-                  <ProductDiscount>
-                    -{product.discount}%
-                  </ProductDiscount>
-                  {/* <Text type="danger" style={{ marginLeft: 4, fontSize:'12px', fontWeight: 600 }}>
-                    -{product.discount}%
-                  </Text> */}
+                  <ProductDiscount>-{product.discount}%</ProductDiscount>
                 </PriceWrapper>
               </ProductCard>
             </Col>
@@ -88,7 +75,6 @@ const CategoryContent = ({ data }) => {
         </Row>
       </div>
     </div>
-    // </CartContainer>
   );
 };
 
