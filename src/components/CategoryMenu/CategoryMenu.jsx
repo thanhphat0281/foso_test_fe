@@ -274,7 +274,7 @@ const CategoryMenu = () => {
         {features.map((f, i) => (
           <InfoItem key={i}>
             {f.icon}
-            <span style={{paddingTop:'3px'}}>{f.label}</span>
+            <span style={{paddingTop:'2px'}}>{f.label}</span>
           </InfoItem>
         ))}
       </InfoList>
